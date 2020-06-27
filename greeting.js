@@ -21,7 +21,7 @@ function askForName() {
     form.addEventListener("submit", handleSubmit);
 }
 
-function paintGreeting(text) {
+function createGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello, ${text}`;
@@ -32,7 +32,7 @@ function loadName() {
     if (currentUser === null) {
         askForName(); // user is not
     } else {
-        paintGreeting(currentUser);// user is
+        createGreeting(currentUser);// user is
     }
 }
 
