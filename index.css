@@ -2,12 +2,24 @@ body {
     background-color:#30336b;
 }
 
-.btn {
-    cursor: pointer;
+.container {
+    
+    color: aliceblue;
+
+    height: 100%;
+    margin: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-    color: #0a3d62;
+
+
+.btn {
+    cursor: pointer;
+    margin-right: 100px;
 }
 
 .clicked {
@@ -42,3 +54,22 @@ body {
 
     animation: fadeIn .5s linear;
 }
+
+.js-clock {
+    font-size: 30px;
+}
+
+.js-date {
+    font-size: 30px;
+    margin-bottom: 50px;
+
+    white-space: nowrap;
+}
+
+.js-weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+

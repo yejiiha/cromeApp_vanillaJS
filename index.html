@@ -9,28 +9,42 @@
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1 class="js-title"></h1>
+
+    <div class="container">
+
+        <!-- 날씨 출력-->
+        <span class="js-weather"></span>
+
+        <!-- 시간 출력 -->
+        <div class="js-clock">
+            <h1 class="js-title"></h1>
+        </div>
+
+        <!-- 날짜 출력 -->
+        <div class="js-date"></div>
+
+        <!-- 사용자 이름 입력폼 -->
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+
+        <!-- 환영 문구 출력 -->
+        <h2 class="js-greetings greetings"></h2>
+
+
+        <!-- to do list 입력폼-->
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+
+        <!-- 입력한 to do list 출력-->
+        <ul class="js-toDoList todo">
+        </ul>
+
     </div>
 
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
-    </form>
-
-    <h4 class="js-greetings greetings"></h4>
-
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-    </form>
-
-    <ul class="js-toDoList">
-    </ul>
-
-    <span class="js-weather">
-
-    </span>
-
     <script src="clock.js"></script>
+    <script src="date.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
